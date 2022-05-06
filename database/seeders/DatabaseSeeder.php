@@ -1,0 +1,22 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // \App\Models\User::factory(10)->create();
+        \App\Models\Ward::factory('20')->create();
+        \App\Models\LGA::factory('20')->create();
+        \App\Models\State::factory('10')->create();
+
+    }
+}
